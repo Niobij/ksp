@@ -8,16 +8,16 @@
 public class Main {
 
 	//weight
-	private static final double W_USEFUL			= 0.1 + 0.01 + 0.1 + 0.2;
+	private static final double W_USEFUL			= 0.1 + 0.84;
 
-	private static final double W_S3_TOTAL			= W_USEFUL + 0.05 + (2.25) + 2 * 0.15 + 3 * 0.05 + 4 * 0.005 + 0.5;
-	private static final double W_S3_DRY			= W_S3_TOTAL - 2;
+	private static final double W_S3_TOTAL			= W_USEFUL + 0.05 + 4 * 0.005 + 3 * 0.05 + 3 * 0.125 + 6 * 0.05 + (0.5625) + 3 * (1.125) + (2.25) + 1.25;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 0.49 - 3 * 1 - 2;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + 0.55 + 4 * 0.05 + (1.125) + (2.25) + 1.25;
-	private static final double W_S2_DRY			= W_S2_TOTAL - 1 - 2;
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + (0.5625) + (1.125) + 2 * (2.25) + 1.25;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 0.49 - 1 - 2 * 2;
 
-	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0.05 + 4 * 0.05 + 4 * 0.02 + 5 * 0.05 + 2 * 0.05 + 2 * (1.125) + (9) + (18) + 3;
-	private static final double W_S1_DRY			= W_S1_TOTAL - 2 * 1 - 8 - 16;
+	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0.05 + 2 * 0.05 + 18 * 0.05 + 4 * (4.5) + 2 * (18) + 2 * 1.25 + 3;
+	private static final double W_S1_DRY			= W_S1_TOTAL - 4 * 4 - 2 * 16;
 
 
 	public static final void main(final String[] _args) {
@@ -32,9 +32,9 @@ public class Main {
 
 		final double isp = 350;
 		final double we = Calculations.calcWe(isp);
-//
+
 		System.out.println("Znum = " + Calculations.calcZnum(3300, we));
-//		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 9.82, 15.2275, 5.2275));
+//		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
 //		System.out.println("TWR = " + Calculations.calcTWR(0, 0, 0));
 	}
 
