@@ -8,34 +8,33 @@
 public class Main {
 
 	//weight
-	private static final double W_USEFUL			= 0.84 + 0.1 + 3 * 0.15 + 4 * 0.005;
+	private static final double W_USEFUL			= 0.1 + 0.01 + 0.1 + 0.2;
 
-	private static final double W_S4_TOTAL			= W_USEFUL + 0.05 + 2 * (0.5625) + 2 * (1.125) + 0.5;
-	private static final double W_S4_DRY			= W_USEFUL + 0.05 + 2 * (0.5625 - 0.49) + 2 * (1.125 - 1) + 0.5;
+	private static final double W_S3_TOTAL			= W_USEFUL + 0.05 + (2.25) + 2 * 0.15 + 3 * 0.05 + 4 * 0.005 + 0.5;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 2;
 
-	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0.05 + (0.5625) + (2.25) + 0.5;
-	private static final double W_S3_DRY			= W_S4_TOTAL + 0.05 + (0.5625 - 0.49) + (2.25 - 2) + 0.5;
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + 0.55 + 4 * 0.05 + (1.125) + (2.25) + 1.25;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 1 - 2;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + 0.15 + 3 * (0.5625) + 3 * (2.25) + 3 * 1.25;
-	private static final double W_S2_DRY			= W_S3_TOTAL + 0.05 + 0.15 + 3 * (0.5625 - 0.49) + 3 * (2.25 - 2) + 3 * 1.25;
-
-	private static final double W_S1_TOTAL			= W_S2_TOTAL + 3 * 0.05 + 15 * (4.5) + 3 * 1.5 + 3 * 1.25;
-	private static final double W_S1_DRY			= W_S2_TOTAL + 3 * 0.05 + 15 * (4.5 - 4)  + 3 * 1.5 + 3 * 1.25;
+	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0.05 + 4 * 0.05 + 4 * 0.02 + 5 * 0.05 + 2 * 0.05 + 2 * (1.125) + (9) + (18) + 3;
+	private static final double W_S1_DRY			= W_S1_TOTAL - 2 * 1 - 8 - 16;
 
 
 	public static final void main(final String[] _args) {
-		System.out.println(W_USEFUL);
-//		System.out.println(W_S1_TOTAL);
-//		System.out.println(W_S1_DRY);
-//		System.out.println(W_S1_TOTAL / W_S1_DRY);
+		System.out.println(W_S1_TOTAL);
+		System.out.println(W_S1_DRY);
+		System.out.println(W_S1_TOTAL / W_S1_DRY);
 
-//		final double[] thrusts = { 215000, 215000, 215000, 315000, 315000, 315000 };
-//		final double[] isps = { 350, 350, 350, 240, 240, 240 };
-
-//		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
+//		final double[] thrusts = { 650000, 250000, 250000 };
+//		final double[] isps = { 350, 230, 230 };
 //
-//		System.out.println("Znum = " + Calculations.calcZnum(3300, 350, Data.G0_KERBIN));
-//		System.out.println("deltaV = " + Calculations.calcDeltaV(390, 9.82, 15.2275, 5.2275));
+//		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
+
+		final double isp = 350;
+		final double we = Calculations.calcWe(isp);
+//
+		System.out.println("Znum = " + Calculations.calcZnum(3300, we));
+//		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 9.82, 15.2275, 5.2275));
 //		System.out.println("TWR = " + Calculations.calcTWR(0, 0, 0));
 	}
 
@@ -46,24 +45,22 @@ class Calculations {
 	/**
 	 * Calculating Tsiolkovsky's number.
 	 * @param _deltaV needed delta V in m/s.
-	 * @param _isp engine's specific impulse in s.
-	 * @param _g0 gravitational acceleration in m/s^2.
+	 * @param _we engine's effective exhaust velocity (we).
 	 * @return Tsiolkovsky's number.
 	 */
-	public static final double calcZnum(final double _deltaV, final double _isp, final double _g0) {
-		return Math.exp(_deltaV / (_isp * _g0));
+	public static final double calcZnum(final double _deltaV, final double _we) {
+		return Math.exp(_deltaV / _we);
 	}
 
 	/**
 	 * Calculate delta v using Tsiolkovsky's formula.
-	 * @param _isp engine's specific impulse in s.
-	 * @param _g0 gravitational acceleration in m/s^2.
+	 * @param _we engine's effective exhaust velocity (we).
 	 * @param _mtotal total mass of rocket.
 	 * @param _mdry mass of rocket without fuel.
 	 * @return delta v.
 	 */
-	public static final double calcDeltaV(final double _isp, final double _g0, final double _mtotal, final double _mdry) {
-		return _isp * _g0 * Math.log(_mtotal / _mdry);
+	public static final double calcDeltaV(final double _we, final double _mtotal, final double _mdry) {
+		return _we * Math.log(_mtotal / _mdry);
 	}
 
 	/**
@@ -100,11 +97,20 @@ class Calculations {
 		result = thrustSum / thrustDivIspSum;
 		return result;
 	}
+
+	/**
+	 * Calculate effective exhaust velocity from specific impulse.
+	 * @param _isp specific impulse of engine.
+	 * @return effective exhaust velocity (we).
+	 */
+	public static final double calcWe(final double _isp) {
+		return _isp * Data.G0_KERBIN;
+	}
 }
 
 class Data {
 
-	public static final double G0_KERBIN			= 9.82;
+	public static final double G0_KERBIN			= 9.816;
 	public static final double G0_MUN				= 1.63;
 
 }
