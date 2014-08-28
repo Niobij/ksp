@@ -21,19 +21,19 @@ public class Main {
 
 
 	public static final void main(final String[] _args) {
-		System.out.println(W_S1_TOTAL);
-		System.out.println(W_S1_DRY);
-		System.out.println(W_S1_TOTAL / W_S1_DRY);
+		System.out.println(W_S3_TOTAL);
+		System.out.println(W_S3_DRY);
+		System.out.println(W_S3_TOTAL / W_S3_DRY);
 
 //		final double[] thrusts = { 650000, 250000, 250000 };
 //		final double[] isps = { 350, 230, 230 };
 //
 //		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
 
-		final double isp = 350;
+		final double isp = 390;
 		final double we = Calculations.calcWe(isp);
 
-		System.out.println("Znum = " + Calculations.calcZnum(3300, we));
+		System.out.println("Znum = " + Calculations.calcZnum(3200, we));
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
 //		System.out.println("TWR = " + Calculations.calcTWR(0, 0, 0));
 	}
