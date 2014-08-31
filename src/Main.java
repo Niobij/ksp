@@ -7,34 +7,40 @@
 public class Main {
 
 	//weight
-	private static final double W_USEFUL			= 0.1 + 0.84;
+	private static final double W_USEFUL			= 0.1 + 0.1 + 0.005 + 0.005 + 0.05 + 2 * 0.15 + 0.2 + 2 * 0.15;
 
-	private static final double W_S3_TOTAL			= W_USEFUL + 0.5 + 0.12 + 2 * 0.0175 + 3 * 0.05 + 3 * 0.05 + 3 * 0.05 + 4 * (1.125) + 1.25;
-	private static final double W_S3_DRY			= W_S3_TOTAL - 4 * 1;
+	private static final double W_S4l_TOTAL 		= W_USEFUL + 0.05 + 0.12 + 2 * (0.235 + 0.0175 + 0.015 + 0.05) + 4 * 0.05 + 3 * 0.05 + 3 * 0.05 + 3 * 0.05 + 6 * 0.15 + 3 * 0.03 + (0.5625) + 5 * (1.125) + 1.25;
+	private static final double W_S4l_DRY 			= W_S4l_TOTAL - 0.49 - 5 * 1;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + (0.5625) + (4.5) + 1.25;
-	private static final double W_S2_DRY			= W_S2_TOTAL - 0.49 - 4;
+	private static final double W_S4o_TOTAL 		= W_USEFUL + 0.05 + 0.1 + 0.55 + 4 * 0.05 + (1.125) + 0.5;
+	private static final double W_S4o_DRY 			= W_S4o_TOTAL - 1;
 
-	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0.05 + 0.1 + 4 * 0.02 + (4.5) + 2 * (18) + 3;
-	private static final double W_S1_DRY			= W_S1_TOTAL - 4 - 2 * 16;
+	private static final double W_S3_TOTAL			= W_S4l_TOTAL + W_S4o_TOTAL - W_USEFUL + 0.05 + 0.1 + (9) + 2;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 8;
+
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.4 + 6 * 0.05 + 2 * 0.03 + 2 * (1.125) + (4.5) + (9) + 3;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 2 * 1 - 4 - 8;
+
+	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0.4 + 2 * 0.4 + 20 * 0.05 + 2 * 0.03 + 2 * (4.5) + 2 * (9) + (18) + 2 * (36) + 42 + 2 * 3;
+	private static final double W_S1_DRY			= W_S1_TOTAL - 2 * 4 - 2 * 8 - 16 - 2 * 32 - 32;
 
 
 	public static final void main(final String[] _args) {
 		System.out.println(W_S1_TOTAL);
-		System.out.println(W_S1_DRY);
+		System.out.println(W_S1_TOTAL);
 		System.out.println(W_S1_TOTAL / W_S1_DRY);
 
-//		final double[] thrusts = { 650000, 250000, 250000 };
-//		final double[] isps = { 350, 230, 230 };
-//
-//		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
-
-		final double isp = 350;
+		final double isp = 330;
 		final double we = Calculations.calcWe(isp);
 
 		System.out.println("Znum = " + Calculations.calcZnum(3300, we));
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
-//		System.out.println("TWR = " + Calculations.calcTWR(0, 0, 0));
+		System.out.println("TWR = " + Calculations.calcTWR(2 * 650000 + 2000000, 172027.5, Data.G0_KERBIN));
+
+//		final double[] thrusts = { 650000, 650000, 2000000 };
+//		final double[] isps = { 350, 350, 320 };
+//
+//		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
 	}
 
 }
@@ -70,7 +76,7 @@ class Calculations {
 	 * @return twr.
 	 */
 	public static final double calcTWR(final double _ft, final double _mt, final double _g0) {
-		return _ft / _mt * _g0;
+		return _ft / (_mt * _g0);
 	}
 
 	/**
