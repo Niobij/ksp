@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = Squad/Flags/hexagon
-	launchID = 46
+	launchID = 47
 	PARAMETERS
 	{
 		FLIGHT
@@ -392,7 +392,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6, 9
-		sci = 285.2021
+		sci = 292.9267
 		Tech
 		{
 			id = start
@@ -907,9 +907,9 @@ GAME
 			id = mobileMaterialsLab@KerbinSrfLandedLaunchPad
 			title = Materials Study from LaunchPad
 			dsc = 1
-			scv = 0.1886718
+			scv = 0.009028216
 			sbv = 0.3
-			sci = 7.788751
+			sci = 9.51333
 			cap = 9.6
 		}
 		Science
@@ -1832,6 +1832,26 @@ GAME
 			sci = 0
 			cap = 256
 		}
+		Science
+		{
+			id = barometerScan@KerbinSrfLandedLaunchPad
+			title = Atmospheric Pressure Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 3.6
+			cap = 3.6
+		}
+		Science
+		{
+			id = temperatureScan@KerbinSrfLandedLaunchPad
+			title = Temperature Scan from LaunchPad
+			dsc = 1
+			scv = 0
+			sbv = 0.3
+			sci = 2.4
+			cap = 2.4
+		}
 	}
 	SCENARIO
 	{
@@ -1841,7 +1861,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.24.2
-		UT = 44113993.1466924
+		UT = 44114182.0394818
 		activeVessel = 0
 		VESSEL
 		{
@@ -1874,10 +1894,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 66.252071216593
-				LAN = 220.049852398985
-				MNA = -8.40714670366796
-				EPH = 44113988.0266916
+				LPE = 58.2706605316135
+				LAN = 347.682691252912
+				MNA = -8.40714670366795
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -2096,13 +2116,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 299999.961836213
 				ECC = 1
 				INC = NaN
-				LPE = 66.252046445231
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 58.2706906143565
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -2321,13 +2341,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.946096186
+				SMA = 299999.943428209
 				ECC = 1
 				INC = NaN
-				LPE = 66.2521384218365
-				LAN = 220.049852398985
+				LPE = 58.2705954643636
+				LAN = 347.682691252912
 				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -2546,13 +2566,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 299999.999253169
 				ECC = 1
 				INC = NaN
-				LPE = 66.2522421903696
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 58.2704862750101
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -2754,10 +2774,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 66.2519912648706
-				LAN = 220.049852398985
+				LPE = 58.2707383137187
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -2956,13 +2976,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 66.2521690168206
-				LAN = 220.049852398985
+				LPE = 58.2705663934851
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -3161,13 +3181,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 299999.947453363
 				ECC = 1
 				INC = NaN
-				LPE = 80.0777011052186
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 155.482754433822
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -3386,13 +3406,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 80.0775500160059
-				LAN = 220.049852398985
+				LPE = 155.482904048929
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -3611,13 +3631,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 299999.901987943
 				ECC = 1
 				INC = NaN
-				LPE = 80.0777160523647
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 155.482744707077
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -3836,13 +3856,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 80.0778196766299
-				LAN = 220.049852398985
+				LPE = 155.482639208261
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -4041,13 +4061,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.959544459
+				SMA = 299999.967286609
 				ECC = 1
 				INC = NaN
-				LPE = 80.0776739768279
-				LAN = 220.049852398985
+				LPE = 155.482774893954
+				LAN = 347.682691252912
 				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -4246,13 +4266,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 299999.965909154
 				ECC = 1
 				INC = NaN
-				LPE = 80.0777994046881
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 155.482660410023
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -9044,13 +9064,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300032.537642162
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 91.2704394386357
-				LAN = 220.049852398985
-				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				LPE = 33.1622645585481
+				LAN = 347.682691252912
+				MNA = -8.40714670366795
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -10307,13 +10327,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300126.752789474
 				ECC = 1
 				INC = NaN
-				LPE = 27.1812964453429
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 97.2558938213361
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -11033,13 +11053,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300126.159348004
+				SMA = 300126.145167907
 				ECC = 1
 				INC = NaN
-				LPE = 27.1813732160811
-				LAN = 220.049852398985
+				LPE = 97.2558183808998
+				LAN = 347.682691252912
 				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -11513,13 +11533,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300322.489232593
 				ECC = 1
 				INC = NaN
-				LPE = 122.725105101165
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				LPE = 100.368223199069
+				LAN = 347.682691252912
+				MNA = 3.14159265358979
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -12498,13 +12518,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300233.506352986
+				SMA = 300233.508445365
 				ECC = 1
 				INC = NaN
-				LPE = 20.8099251452312
-				LAN = 220.049852398985
+				LPE = 108.699141178491
+				LAN = 347.682691252912
 				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -12706,10 +12726,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 20.81200673436
-				LAN = 220.049852398985
+				LPE = 108.69874624429
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -13329,13 +13349,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 31369.3137283929
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 109.856544119575
-				LAN = 220.049852398985
-				MNA = 3.14159265358979
-				EPH = 44113988.0266916
+				LPE = 105.983360022727
+				LAN = 347.682691252912
+				MNA = -8.40714670366795
+				EPH = 44114180.0394815
 				REF = 3
 			}
 			PART
@@ -13511,13 +13531,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 164.277467592079
-				LAN = 220.049852398985
-				MNA = 0
-				EPH = 44113988.0266916
+				LPE = 69.6571608896567
+				LAN = 347.682691252912
+				MNA = -8.40714670366795
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -13719,10 +13739,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 164.278610975032
-				LAN = 220.049852398985
+				LPE = 69.654806779184
+				LAN = 347.682691252912
 				MNA = -8.40714670366795
-				EPH = 44113988.0266916
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -13921,13 +13941,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300675.951073567
 				ECC = 1
 				INC = NaN
-				LPE = 164.276058599259
-				LAN = 220.049852398985
-				MNA = 0
-				EPH = 44113988.0266916
+				LPE = 69.6638852647898
+				LAN = 347.682691252912
+				MNA = 0.570796326794897
+				EPH = 44114180.0394815
 				REF = 1
 			}
 			PART
@@ -17354,842 +17374,6 @@ GAME
 			{
 				type = CelestialBody
 				tgtId = Kerbin
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = c2e2a143d776490699d510977e012ff0
-			name = Duna Lander Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 35.8799991980195
-			lct = 24557979.0063233
-			root = 0
-			lat = -0.0973521562290759
-			lon = 285.442484204077
-			alt = 77.8909876910038
-			hgt = 5.311135
-			nrm = 0.0004599542,0.9999979,-0.002012705
-			rot = 0.6844848,0.3523363,-0.1782404,-0.6128377
-			CoM = -3.982735E-07,-1.824122E-06,3.897869E-07
-			stg = 11
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = NaN
-				ECC = 1
-				INC = NaN
-				LPE = 91.5213193250225
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
-				REF = 1
-			}
-			PART
-			{
-				name = launchClamp1
-				uid = 2481655178
-				mid = 3745802942
-				launchID = 45
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 11
-				dstg = 0
-				sqor = 11
-				sidx = 0
-				attm = 1
-				srfN = None, -1
-				mass = 0.1
-				temp = 19.52248
-				expt = 0.1
-				state = 1
-				connected = False
-				attached = False
-				flag = Squad/Flags/hexagon
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = LaunchClamp
-					isEnabled = True
-					scaleFactor = 2.375959
-					height = 5.995016
-					towerRot = -9.929909E-06,-0.3826835,-4.896902E-06,-0.9238796
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0.7099993
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 24557977.0263233
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 6c87509f06934acabd1577a24f91689c
-			name = Duna Lander Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 35.8799991980195
-			lct = 24557979.0063233
-			root = 0
-			lat = -0.0973504591440169
-			lon = 285.442202049045
-			alt = 77.8881166004576
-			hgt = 5.310469
-			nrm = -0.001485431,0.999993,-0.003445966
-			rot = 0.6091331,-0.1822317,0.3593382,-0.6830993
-			CoM = 0,0,0
-			stg = 11
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = NaN
-				ECC = 1
-				INC = NaN
-				LPE = 91.521037169185
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
-				REF = 1
-			}
-			PART
-			{
-				name = launchClamp1
-				uid = 3379865151
-				mid = 3745802942
-				launchID = 45
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 11
-				dstg = 0
-				sqor = 11
-				sidx = 1
-				attm = 1
-				srfN = None, -1
-				mass = 0.1
-				temp = 19.522
-				expt = 0.1
-				state = 1
-				connected = False
-				attached = False
-				flag = Squad/Flags/hexagon
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = LaunchClamp
-					isEnabled = True
-					scaleFactor = 2.375961
-					height = 5.995016
-					towerRot = -1.048414E-05,0.3826834,3.558873E-06,-0.9238796
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0.7099993
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 24557977.0263233
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 8dea4f2595624afb941188a407f5e37b
-			name = Duna Lander Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 35.8799991980195
-			lct = 24557979.0063233
-			root = 0
-			lat = -0.0970681685888031
-			lon = 285.442203512849
-			alt = 77.8876196539495
-			hgt = 5.309977
-			nrm = 3.638171E-05,0.9999895,-0.004576055
-			rot = 0.1763309,-0.6109304,0.6865678,-0.3525566
-			CoM = 3.146456E-07,-1.827434E-06,-4.622482E-07
-			stg = 11
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 0
-				ECC = 1
-				INC = NaN
-				LPE = 91.5210386468265
-				LAN = 220.049852398985
-				MNA = -8.40714670366795
-				EPH = 44113988.0266916
-				REF = 1
-			}
-			PART
-			{
-				name = launchClamp1
-				uid = 673441511
-				mid = 3745802942
-				launchID = 45
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 11
-				dstg = 0
-				sqor = 11
-				sidx = 2
-				attm = 1
-				srfN = None, -1
-				mass = 0.1
-				temp = 19.52151
-				expt = 0.1
-				state = 1
-				connected = False
-				attached = False
-				flag = Squad/Flags/hexagon
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = LaunchClamp
-					isEnabled = True
-					scaleFactor = 2.375962
-					height = 5.995016
-					towerRot = -4.896901E-06,0.9238796,9.929909E-06,-0.3826834
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0.7099993
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 24557977.0263233
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = aee339aa115e45ec8dc06aa5fd8bcf6c
-			name = Duna Lander Debris
-			type = Debris
-			sit = LANDED
-			landed = True
-			landedAt = LaunchPad
-			splashed = False
-			met = 35.8799991980195
-			lct = 24557979.0063233
-			root = 0
-			lat = -0.0970703072985565
-			lon = 285.442486151603
-			alt = 77.890313764452
-			hgt = 5.310461
-			nrm = 0.001376825,0.9999927,-0.003567141
-			rot = -0.3577009,-0.6812661,0.6120782,0.1824472
-			CoM = 0,0,0
-			stg = 11
-			prst = False
-			ref = 0
-			ctrl = False
-			cPch = 0
-			cHdg = 0
-			cMod = -1
-			ORBIT
-			{
-				SMA = 300038.945156863
-				ECC = 1
-				INC = NaN
-				LPE = 91.5213212840582
-				LAN = 220.049852398985
-				MNA = 3.14159265358979
-				EPH = 44113988.0266916
-				REF = 1
-			}
-			PART
-			{
-				name = launchClamp1
-				uid = 3960492230
-				mid = 3745802942
-				launchID = 45
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				istg = 11
-				dstg = 0
-				sqor = 11
-				sidx = 3
-				attm = 1
-				srfN = None, -1
-				mass = 0.1
-				temp = 19.52127
-				expt = 0.1
-				state = 1
-				connected = False
-				attached = False
-				flag = Squad/Flags/hexagon
-				rTrf = launchClamp1
-				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				MODULE
-				{
-					name = LaunchClamp
-					isEnabled = True
-					scaleFactor = 2.37596
-					height = 5.995016
-					towerRot = 3.558873E-06,0.9238796,1.048414E-05,0.3826834
-					EVENTS
-					{
-						Release
-						{
-							active = True
-							guiActive = True
-							guiIcon = Release Clamp
-							guiName = Release Clamp
-							category = Release Clamp
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ReleaseClamp
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleGenerator
-					isEnabled = True
-					generatorIsActive = True
-					throttle = 0.7099993
-					EVENTS
-					{
-						Activate
-						{
-							active = False
-							guiActive = True
-							guiIcon = Activate Generator
-							guiName = Activate Generator
-							category = Activate Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Shutdown
-						{
-							active = False
-							guiActive = True
-							guiIcon = Shutdown Generator
-							guiName = Shutdown Generator
-							category = Shutdown Generator
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-						ActivateAction
-						{
-							actionGroup = None
-						}
-						ShutdownAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleTestSubject
-					isEnabled = True
-					EVENTS
-					{
-						RunTestEvent
-						{
-							active = False
-							guiActive = True
-							guiIcon = Run Test
-							guiName = Run Test
-							category = Run Test
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = True, 24557977.0263233
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
 			}
 			CTRLSTATE
 			{
