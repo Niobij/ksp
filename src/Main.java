@@ -7,28 +7,28 @@
 public class Main {
 
 	//weight
-	private static final double W_USEFUL			= 0.1 + 0.1 + 0.005 + 0.005 + 0.005 + 0.04 + 0.2 + 3 * 0.15;
+	private static final double W_USEFUL			= 0.3 + 4.12;
 
-	private static final double W_S4_TOTAL 			= W_USEFUL + 0.05 + 0.12 + 0.25 + 2 * (0.0175 + 0.005) + 4 * (0.05 + 0.05 + 0.005) + (0.5625) + 0.5;
-	private static final double W_S4_DRY 			= W_S4_TOTAL - 0.49;
+	private static final double W_S4_TOTAL 			= W_USEFUL + 0.4 + 0.2 + 2 * (0.75 + 0.005 + 0.005 + 0.015 + 0.02 + 0.025) + 3 * 0.005 + 4 * (0.1 + 0.08 + 0.05 + 0.005) + (18) + 2;
+	private static final double W_S4_DRY 			= W_S4_TOTAL - 16;
 
-	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0.5 + 0.55 + 3 * (0.015 + 0.1 + 0.2 + 0.05) + 4 * 0.005 + 12 * 0.05 + 21 * 0.15 + (0.5625) + (2.25) + 3 * (2.25 + 4.5) + 1.25;
-	private static final double W_S3_DRY			= W_S3_TOTAL - 0.49 - 2 - 3 * (2 + 4);
+	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0.4 + 4 * 0.005 + (18) + 3;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 16;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.05 + 0.1 + 3 * (0.05 + 0.03) + 9 * 0.05 + 3 * (1.125 + 4.5) + (4.5) + 3;
-	private static final double W_S2_DRY			= W_S2_TOTAL - 3 * (1 + 4) - 4;
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.4 + (4.5) + 3 * (36) + (42) + 6;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 4 - 3 * 32 - 32;
 
-	private static final double W_S1_TOTAL			= W_S2_TOTAL + 4 * 0.4 + 8 * 0.005 + 24 * 0.05 + 3 * (9) + 6 * (18) + (4.5 + 18) + 42 + 3 * 3;
-	private static final double W_S1_DRY			= W_S1_TOTAL - 3 * 8 - 6 * 16 - 4 - 16 - 32;
+	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0;
+	private static final double W_S1_DRY			= W_S1_TOTAL - 0;
 
 	public static final void main(final String[] _args) {
-		final double wTotal     = W_S1_TOTAL;
-		final double wDry       = W_S1_DRY;
-		final double tdratio    = W_S1_TOTAL / W_S1_DRY;
+		final double wTotal     = W_S2_TOTAL;
+		final double wDry       = W_S2_DRY;
+		final double tdratio    = W_S2_TOTAL / W_S2_DRY;
 
 		System.out.format("Weigth total:\t%.4f t\nWeight dry:\t\t%.4f t\nT/D ratio:\t\t%.4f\n", wTotal, wDry, tdratio);
 
-		final double isp = 331;
+		final double isp = 340;
         final double deltaV = 3300;
 		final double we = Calculations.calcWe(isp);
 		final double znum = Calculations.calcZnum(deltaV, we);
@@ -39,12 +39,11 @@ public class Main {
 
 		System.out.format("Znum:\t\t\t%.4f\nRemain fuel:\t%.4f t\n", znum, remainFuel);
 
-
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
-		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(2000 * 1000 + 650 * 2 * 1000, wTotal * 1000 + 120 * 1000, Data.G0_KERBIN));
+		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(2000, wTotal, Data.G0_KERBIN));
 
-//		final double[] thrusts = { 650000, 650000, 2000000 };
-//		final double[] isps = { 350, 350, 320 };
+//		final double[] thrusts = { 315000, 315000, 2000000 };
+//		final double[] isps = { 240, 240, 320 };
 //
 //		System.out.println("Average Isp = " + Calculations.calcAverageIsp(thrusts, isps));
 	}
@@ -76,13 +75,13 @@ class Calculations {
 
 	/**
 	 * Calculate thrust to weight ratio.
-	 * @param _ft thrust of the engines in N.
-	 * @param _m total mass of the craft in kg.
+	 * @param _ft thrust of the engines in kN.
+	 * @param _m total mass of the craft in t.
 	 * @param _g0 local gravitational acceleration in m/s^2.
 	 * @return twr.
 	 */
 	public static final double calcTWR(final double _ft, final double _m, final double _g0) {
-		return _ft / (_m * _g0);
+		return (_ft * 1000) / ((_m * 1000) * _g0);
 	}
 
 	/**

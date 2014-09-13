@@ -4,7 +4,7 @@ description =
 type = VAB
 PART
 {
-	part = mk1pod_4293966076
+	part = mk1pod_4293868120
 	partName = Part
 	pos = -1.708232E-05,24.21539,-3.319234E-06
 	rot = 0,0,0,1
@@ -16,13 +16,10 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = parachuteSingle_4293965982
-	link = stackDecoupler_4293965932
-	link = sensorThermometer_4293964160
-	link = longAntenna_4293964136
-	link = longAntenna_4293964074
-	attN = bottom,stackDecoupler_4293965932
-	attN = top,parachuteSingle_4293965982
+	link = parachuteSingle_4293868026
+	link = stackDecoupler_4293867976
+	attN = bottom,stackDecoupler_4293867976
+	attN = top,parachuteSingle_4293868026
 	EVENTS
 	{
 	}
@@ -303,7 +300,7 @@ PART
 }
 PART
 {
-	part = parachuteSingle_4293965982
+	part = parachuteSingle_4293868026
 	partName = Part
 	pos = -1.708232E-05,24.87285,-3.319234E-06
 	rot = 0,0,0,1
@@ -315,7 +312,7 @@ PART
 	sqor = 0
 	attm = 0
 	modCost = 0
-	attN = bottom,mk1pod_4293966076
+	attN = bottom,mk1pod_4293868120
 	EVENTS
 	{
 	}
@@ -417,7 +414,7 @@ PART
 }
 PART
 {
-	part = stackDecoupler_4293965932
+	part = stackDecoupler_4293867976
 	partName = Part
 	pos = -1.708232E-05,23.7453,-3.319234E-06
 	rot = 0,0,0,1
@@ -429,11 +426,11 @@ PART
 	sqor = 1
 	attm = 0
 	modCost = 0
-	link = sasModule_4293965894
-	link = solarPanels4_4293965866
-	link = solarPanels4_4293965768
-	attN = bottom,sasModule_4293965894
-	attN = top,mk1pod_4293966076
+	link = sasModule_4293867938
+	link = solarPanels4_4293867910
+	link = solarPanels4_4293867812
+	attN = bottom,sasModule_4293867938
+	attN = top,mk1pod_4293868120
 	EVENTS
 	{
 	}
@@ -492,7 +489,7 @@ PART
 }
 PART
 {
-	part = sasModule_4293965894
+	part = sasModule_4293867938
 	partName = Part
 	pos = -1.708232E-05,23.43008,-3.319234E-06
 	rot = 0,0,0,1
@@ -504,9 +501,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = fuelTankSmall_4293965670
-	attN = bottom,fuelTankSmall_4293965670
-	attN = top,stackDecoupler_4293965932
+	link = fuelTankSmall_4293867714
+	attN = bottom,fuelTankSmall_4293867714
+	attN = top,stackDecoupler_4293867976
 	EVENTS
 	{
 	}
@@ -563,7 +560,7 @@ PART
 }
 PART
 {
-	part = solarPanels4_4293965866
+	part = solarPanels4_4293867910
 	partName = Part
 	pos = -0.6059257,23.70286,-3.283119E-06
 	rot = 0,0,0,-1
@@ -575,8 +572,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels4_4293965768
-	srfN = srfAttach,stackDecoupler_4293965932
+	sym = solarPanels4_4293867812
+	srfN = srfAttach,stackDecoupler_4293867976
 	EVENTS
 	{
 	}
@@ -635,7 +632,7 @@ PART
 }
 PART
 {
-	part = solarPanels4_4293965768
+	part = solarPanels4_4293867812
 	partName = Part
 	pos = 0.6058915,23.70286,-3.408319E-06
 	rot = 0,-1,0,4.371139E-08
@@ -647,8 +644,8 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = solarPanels4_4293965866
-	srfN = srfAttach,stackDecoupler_4293965932
+	sym = solarPanels4_4293867910
+	srfN = srfAttach,stackDecoupler_4293867976
 	EVENTS
 	{
 	}
@@ -707,7 +704,7 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293965670
+	part = fuelTankSmall_4293867714
 	partName = Part
 	pos = -1.708232E-05,22.69261,-3.319234E-06
 	rot = 0,0,0,1
@@ -719,12 +716,12 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = liquidEngine_4293965638
-	link = fuelTankSmall_4293965546
-	link = fuelTankSmall_4293965378
-	link = fuelTankSmall_4293965210
-	attN = top,sasModule_4293965894
-	attN = bottom,liquidEngine_4293965638
+	link = liquidEngine_4293867682
+	link = fuelTankSmall_4293867590
+	link = fuelTankSmall_4293867422
+	link = fuelTankSmall_4293867254
+	attN = top,sasModule_4293867938
+	attN = bottom,liquidEngine_4293867682
 	EVENTS
 	{
 	}
@@ -754,7 +751,7 @@ PART
 }
 PART
 {
-	part = liquidEngine_4293965638
+	part = liquidEngine_4293867682
 	partName = Part
 	pos = -1.708232E-05,21.23553,-3.319234E-06
 	rot = 0,0,0,1
@@ -766,9 +763,9 @@ PART
 	sqor = 2
 	attm = 0
 	modCost = 0
-	link = stackDecoupler_4293964760
-	attN = top,fuelTankSmall_4293965670
-	attN = bottom,stackDecoupler_4293964760
+	link = stackDecoupler_4293866804
+	attN = top,fuelTankSmall_4293867714
+	attN = bottom,stackDecoupler_4293866804
 	EVENTS
 	{
 	}
@@ -895,7 +892,7 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293965546
+	part = fuelTankSmall_4293867590
 	partName = Part
 	pos = -1.03094,22.1537,0.5952002
 	rot = 0,-0.258819,0,-0.9659259
@@ -907,12 +904,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = fuelLine_4293965514
-	link = strutConnector_4293965434
-	link = landingLeg1_4293964948
-	sym = fuelTankSmall_4293965378
-	sym = fuelTankSmall_4293965210
-	srfN = srfAttach,fuelTankSmall_4293965670
+	link = fuelLine_4293867558
+	link = strutConnector_4293867478
+	link = landingLeg1_4293866992
+	sym = fuelTankSmall_4293867422
+	sym = fuelTankSmall_4293867254
+	srfN = srfAttach,fuelTankSmall_4293867714
 	EVENTS
 	{
 	}
@@ -942,10 +939,10 @@ PART
 }
 PART
 {
-	part = fuelLine_4293965514
+	part = fuelLine_4293867558
 	partName = FuelLine
 	pos = -1.180744,22.42489,0.03612264
-	rot = -4.447849E-08,0.6087615,1.069375E-07,-0.7933533
+	rot = -4.447849E-08,0.6087615,1.069375E-07,-0.7933534
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -954,10 +951,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: fuelTankSmall_4; pos: -0.09081551,-0.01034162,-0.7173574; dir: -0.1255821,-0.01430199,-0.9919801; rot: -0.2705982,-0.6532815,-0.6532814,0.2705984
-	sym = fuelLine_4293965346
-	sym = fuelLine_4293965178
-	srfN = srfAttach,fuelTankSmall_4293965546
+	cData = tgt: fuelTankSmall_4; pos: -0.0908156,-0.01034162,-0.7173573; dir: -0.1255821,-0.01430199,-0.9919801; rot: -0.2705981,-0.6532815,-0.6532814,0.2705984
+	sym = fuelLine_4293867390
+	sym = fuelLine_4293867222
+	srfN = srfAttach,fuelTankSmall_4293867590
 	EVENTS
 	{
 	}
@@ -967,7 +964,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4293965434
+	part = strutConnector_4293867478
 	partName = StrutConnector
 	pos = -1.041989,22.66466,0.6364358
 	rot = 0.4304594,-0.4304594,0.5609855,-0.5609856
@@ -980,9 +977,9 @@ PART
 	attm = 1
 	modCost = 0
 	cData = tgt: stackDecoupler_2; pos: -1.045618,0.4315237,0.437774; dir: -0.8620663,0.3557727,0.3609258
-	sym = strutConnector_4293965266
-	sym = strutConnector_4293965098
-	srfN = srfAttach,fuelTankSmall_4293965546
+	sym = strutConnector_4293867310
+	sym = strutConnector_4293867142
+	srfN = srfAttach,fuelTankSmall_4293867590
 	EVENTS
 	{
 	}
@@ -992,7 +989,7 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293965378
+	part = fuelTankSmall_4293867422
 	partName = Part
 	pos = 1.030906,22.1537,0.5952002
 	rot = 0,-0.9659259,0,-0.258819
@@ -1004,12 +1001,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = fuelLine_4293965346
-	link = strutConnector_4293965266
-	link = landingLeg1_4293964854
-	sym = fuelTankSmall_4293965546
-	sym = fuelTankSmall_4293965210
-	srfN = srfAttach,fuelTankSmall_4293965670
+	link = fuelLine_4293867390
+	link = strutConnector_4293867310
+	link = landingLeg1_4293866898
+	sym = fuelTankSmall_4293867590
+	sym = fuelTankSmall_4293867254
+	srfN = srfAttach,fuelTankSmall_4293867714
 	EVENTS
 	{
 	}
@@ -1039,10 +1036,10 @@ PART
 }
 PART
 {
-	part = fuelLine_4293965346
+	part = fuelLine_4293867390
 	partName = FuelLine
-	pos = 0.6216323,22.42489,1.004473
-	rot = 7.037134E-08,-0.3826835,9.198822E-08,-0.9238796
+	pos = 0.6216322,22.42489,1.004473
+	rot = 7.037134E-08,-0.3826835,9.198821E-08,-0.9238796
 	attRot = 0,0,0,1
 	mir = 1,1,1
 	istg = 2
@@ -1051,10 +1048,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: fuelTankSmall_4; pos: -0.09081589,-0.01034162,-0.7173578; dir: -0.1255821,-0.01430199,-0.9919801; rot: 0.270598,0.6532816,0.6532815,-0.2705981
-	sym = fuelLine_4293965514
-	sym = fuelLine_4293965178
-	srfN = srfAttach,fuelTankSmall_4293965378
+	cData = tgt: fuelTankSmall_4; pos: -0.09081599,-0.01034162,-0.7173576; dir: -0.1255821,-0.01430199,-0.9919801; rot: 0.270598,0.6532816,0.6532815,-0.2705981
+	sym = fuelLine_4293867558
+	sym = fuelLine_4293867222
+	srfN = srfAttach,fuelTankSmall_4293867422
 	EVENTS
 	{
 	}
@@ -1064,7 +1061,7 @@ PART
 }
 PART
 {
-	part = strutConnector_4293965266
+	part = strutConnector_4293867310
 	partName = StrutConnector
 	pos = 1.072142,22.66466,0.5841511
 	rot = 0.7010574,-0.7010574,-0.09229601,0.09229598
@@ -1077,9 +1074,9 @@ PART
 	attm = 1
 	modCost = 0
 	cData = tgt: stackDecoupler_2; pos: -1.045618,0.4315242,0.437775; dir: -0.8620663,0.3557727,0.3609258
-	sym = strutConnector_4293965434
-	sym = strutConnector_4293965098
-	srfN = srfAttach,fuelTankSmall_4293965378
+	sym = strutConnector_4293867478
+	sym = strutConnector_4293867142
+	srfN = srfAttach,fuelTankSmall_4293867422
 	EVENTS
 	{
 	}
@@ -1089,7 +1086,7 @@ PART
 }
 PART
 {
-	part = fuelTankSmall_4293965210
+	part = fuelTankSmall_4293867254
 	partName = Part
 	pos = -1.706693E-05,22.1537,-1.190411
 	rot = 0,-0.7071068,0,0.7071068
@@ -1101,12 +1098,12 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	link = fuelLine_4293965178
-	link = strutConnector_4293965098
-	link = landingLeg1_4293965042
-	sym = fuelTankSmall_4293965546
-	sym = fuelTankSmall_4293965378
-	srfN = srfAttach,fuelTankSmall_4293965670
+	link = fuelLine_4293867222
+	link = strutConnector_4293867142
+	link = landingLeg1_4293867086
+	sym = fuelTankSmall_4293867590
+	sym = fuelTankSmall_4293867422
+	srfN = srfAttach,fuelTankSmall_4293867714
 	EVENTS
 	{
 	}
@@ -1136,9 +1133,9 @@ PART
 }
 PART
 {
-	part = fuelLine_4293965178
+	part = fuelLine_4293867222
 	partName = FuelLine
-	pos = 0.5590608,22.42489,-1.040606
+	pos = 0.5590609,22.42489,-1.040606
 	rot = 1.148498E-07,-0.991445,-1.494925E-08,-0.1305262
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1148,10 +1145,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: fuelTankSmall_4; pos: -0.09081639,-0.01034353,-0.717359; dir: -0.1255821,-0.01430199,-0.9919801; rot: 0.270598,0.6532815,0.6532815,-0.2705982
-	sym = fuelLine_4293965514
-	sym = fuelLine_4293965346
-	srfN = srfAttach,fuelTankSmall_4293965210
+	cData = tgt: fuelTankSmall_4; pos: -0.09081644,-0.01034353,-0.7173592; dir: -0.1255821,-0.01430199,-0.9919801; rot: 0.270598,0.6532815,0.6532815,-0.2705982
+	sym = fuelLine_4293867558
+	sym = fuelLine_4293867390
+	srfN = srfAttach,fuelTankSmall_4293867254
 	EVENTS
 	{
 	}
@@ -1161,9 +1158,9 @@ PART
 }
 PART
 {
-	part = strutConnector_4293965098
+	part = strutConnector_4293867142
 	partName = StrutConnector
-	pos = -0.03020368,22.66466,-1.220597
+	pos = -0.03020369,22.66466,-1.220597
 	rot = 0.270598,-0.2705981,-0.6532815,0.6532816
 	attRot = 0,0,0,1
 	mir = 1,1,1
@@ -1173,10 +1170,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	cData = tgt: stackDecoupler_2; pos: -1.045616,0.4315238,0.4377738; dir: -0.8620663,0.3557727,0.3609258
-	sym = strutConnector_4293965434
-	sym = strutConnector_4293965266
-	srfN = srfAttach,fuelTankSmall_4293965210
+	cData = tgt: stackDecoupler_2; pos: -1.045616,0.4315238,0.4377737; dir: -0.8620663,0.3557727,0.3609258
+	sym = strutConnector_4293867478
+	sym = strutConnector_4293867310
+	srfN = srfAttach,fuelTankSmall_4293867254
 	EVENTS
 	{
 	}
@@ -1186,7 +1183,7 @@ PART
 }
 PART
 {
-	part = landingLeg1_4293965042
+	part = landingLeg1_4293867086
 	partName = Part
 	pos = -1.712448E-05,21.74901,-1.892584
 	rot = 0,0.7071068,0,-0.7071069
@@ -1198,9 +1195,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = landingLeg1_4293964948
-	sym = landingLeg1_4293964854
-	srfN = srfAttach,fuelTankSmall_4293965210
+	sym = landingLeg1_4293866992
+	sym = landingLeg1_4293866898
+	srfN = srfAttach,fuelTankSmall_4293867254
 	EVENTS
 	{
 	}
@@ -1304,7 +1301,7 @@ PART
 }
 PART
 {
-	part = landingLeg1_4293964948
+	part = landingLeg1_4293866992
 	partName = Part
 	pos = -1.63904,21.74901,0.9462872
 	rot = 0,0.2588191,0,0.9659259
@@ -1316,9 +1313,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = landingLeg1_4293965042
-	sym = landingLeg1_4293964854
-	srfN = srfAttach,fuelTankSmall_4293965546
+	sym = landingLeg1_4293867086
+	sym = landingLeg1_4293866898
+	srfN = srfAttach,fuelTankSmall_4293867590
 	EVENTS
 	{
 	}
@@ -1422,7 +1419,7 @@ PART
 }
 PART
 {
-	part = landingLeg1_4293964854
+	part = landingLeg1_4293866898
 	partName = Part
 	pos = 1.639006,21.74901,0.946287
 	rot = 0,0.9659259,0,0.258819
@@ -1434,9 +1431,9 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = landingLeg1_4293965042
-	sym = landingLeg1_4293964948
-	srfN = srfAttach,fuelTankSmall_4293965378
+	sym = landingLeg1_4293867086
+	sym = landingLeg1_4293866992
+	srfN = srfAttach,fuelTankSmall_4293867422
 	EVENTS
 	{
 	}
@@ -1540,7 +1537,7 @@ PART
 }
 PART
 {
-	part = stackDecoupler_4293964760
+	part = stackDecoupler_4293866804
 	partName = Part
 	pos = -1.708232E-05,20.26123,-3.319234E-06
 	rot = 0,0,0,1
@@ -1552,9 +1549,9 @@ PART
 	sqor = 3
 	attm = 0
 	modCost = 0
-	link = fuelTankSmallFlat_4293964722
-	attN = bottom,fuelTankSmallFlat_4293964722
-	attN = top,liquidEngine_4293965638
+	link = fuelTankSmallFlat_4293866766
+	attN = bottom,fuelTankSmallFlat_4293866766
+	attN = top,liquidEngine_4293867682
 	EVENTS
 	{
 	}
@@ -1613,7 +1610,7 @@ PART
 }
 PART
 {
-	part = fuelTankSmallFlat_4293964722
+	part = fuelTankSmallFlat_4293866766
 	partName = Part
 	pos = -1.708232E-05,19.81573,-3.319234E-06
 	rot = 0,0,0,1
@@ -1625,9 +1622,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = fuelTank.long_4293964692
-	attN = top,stackDecoupler_4293964760
-	attN = bottom,fuelTank.long_4293964692
+	link = fuelTank.long_4293866736
+	attN = top,stackDecoupler_4293866804
+	attN = bottom,fuelTank.long_4293866736
 	EVENTS
 	{
 	}
@@ -1657,7 +1654,7 @@ PART
 }
 PART
 {
-	part = fuelTank.long_4293964692
+	part = fuelTank.long_4293866736
 	partName = Part
 	pos = -1.708232E-05,17.62823,-3.319234E-06
 	rot = 0,0,0,1
@@ -1669,9 +1666,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = liquidEngine_4293964660
-	attN = top,fuelTankSmallFlat_4293964722
-	attN = bottom,liquidEngine_4293964660
+	link = liquidEngine_4293866704
+	attN = top,fuelTankSmallFlat_4293866766
+	attN = bottom,liquidEngine_4293866704
 	EVENTS
 	{
 	}
@@ -1701,7 +1698,7 @@ PART
 }
 PART
 {
-	part = liquidEngine_4293964660
+	part = liquidEngine_4293866704
 	partName = Part
 	pos = -1.708232E-05,14.83891,-3.319234E-06
 	rot = 0,0,0,1
@@ -1713,9 +1710,9 @@ PART
 	sqor = 4
 	attm = 0
 	modCost = 0
-	link = stackDecoupler_4293964568
-	attN = top,fuelTank.long_4293964692
-	attN = bottom,stackDecoupler_4293964568
+	link = stackDecoupler_4293866612
+	attN = top,fuelTank.long_4293866736
+	attN = bottom,stackDecoupler_4293866612
 	EVENTS
 	{
 	}
@@ -1842,7 +1839,7 @@ PART
 }
 PART
 {
-	part = stackDecoupler_4293964568
+	part = stackDecoupler_4293866612
 	partName = Part
 	pos = -1.708232E-05,13.8646,-3.319234E-06
 	rot = 0,0,0,1
@@ -1854,9 +1851,9 @@ PART
 	sqor = 5
 	attm = 0
 	modCost = 0
-	link = largeAdapter_4293964530
-	attN = bottom,largeAdapter_4293964530
-	attN = top,liquidEngine_4293964660
+	link = largeAdapter_4293866574
+	attN = bottom,largeAdapter_4293866574
+	attN = top,liquidEngine_4293866704
 	EVENTS
 	{
 	}
@@ -1915,7 +1912,7 @@ PART
 }
 PART
 {
-	part = largeAdapter_4293964530
+	part = largeAdapter_4293866574
 	partName = Part
 	pos = -1.708232E-05,12.98161,-3.319234E-06
 	rot = 0,0,0,1
@@ -1927,9 +1924,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = fuelTank4-2_4293964506
-	attN = top,stackDecoupler_4293964568
-	attN = bottom,fuelTank4-2_4293964506
+	link = fuelTank4-2_4293866550
+	attN = top,stackDecoupler_4293866612
+	attN = bottom,fuelTank4-2_4293866550
 	EVENTS
 	{
 	}
@@ -1939,7 +1936,7 @@ PART
 }
 PART
 {
-	part = fuelTank4-2_4293964506
+	part = fuelTank4-2_4293866550
 	partName = Part
 	pos = -1.708232E-05,11.75786,-3.319234E-06
 	rot = 0,0,0,1
@@ -1951,9 +1948,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = fuelTank1-2_4293964478
-	attN = top,largeAdapter_4293964530
-	attN = bottom,fuelTank1-2_4293964478
+	link = fuelTank1-2_4293866522
+	attN = top,largeAdapter_4293866574
+	attN = bottom,fuelTank1-2_4293866522
 	EVENTS
 	{
 	}
@@ -1983,7 +1980,7 @@ PART
 }
 PART
 {
-	part = fuelTank1-2_4293964478
+	part = fuelTank1-2_4293866522
 	partName = Part
 	pos = -1.708232E-05,9.414108,-3.319234E-06
 	rot = 0,0,0,1
@@ -1995,9 +1992,9 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = fuelTank1-2_4293964450
-	attN = top,fuelTank4-2_4293964506
-	attN = bottom,fuelTank1-2_4293964450
+	link = fuelTank1-2_4293866494
+	attN = top,fuelTank4-2_4293866550
+	attN = bottom,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2027,7 +2024,7 @@ PART
 }
 PART
 {
-	part = fuelTank1-2_4293964450
+	part = fuelTank1-2_4293866494
 	partName = Part
 	pos = -1.708232E-05,5.664108,-3.319234E-06
 	rot = 0,0,0,1
@@ -2039,17 +2036,17 @@ PART
 	sqor = -1
 	attm = 0
 	modCost = 0
-	link = engineLargeSkipper_4293964422
-	link = winglet3_4293964312
-	link = winglet3_4293964274
-	link = winglet3_4293964236
-	link = winglet3_4293964198
-	link = launchClamp1_4293958832
-	link = launchClamp1_4293958660
-	link = launchClamp1_4293958548
-	link = launchClamp1_4293958436
-	attN = top,fuelTank1-2_4293964478
-	attN = bottom,engineLargeSkipper_4293964422
+	link = engineLargeSkipper_4293866466
+	link = winglet3_4293866356
+	link = winglet3_4293866318
+	link = winglet3_4293866280
+	link = winglet3_4293866242
+	link = launchClamp1_4293866056
+	link = launchClamp1_4293865948
+	link = launchClamp1_4293865840
+	link = launchClamp1_4293865732
+	attN = top,fuelTank1-2_4293866522
+	attN = bottom,engineLargeSkipper_4293866466
 	EVENTS
 	{
 	}
@@ -2079,7 +2076,7 @@ PART
 }
 PART
 {
-	part = engineLargeSkipper_4293964422
+	part = engineLargeSkipper_4293866466
 	partName = Part
 	pos = -1.708232E-05,3.789108,-3.319234E-06
 	rot = 0,0,0,1
@@ -2091,7 +2088,7 @@ PART
 	sqor = 7
 	attm = 0
 	modCost = 0
-	attN = top,fuelTank1-2_4293964450
+	attN = top,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2280,7 +2277,7 @@ PART
 }
 PART
 {
-	part = winglet3_4293964312
+	part = winglet3_4293866356
 	partName = Part
 	pos = -1.721695E-05,5.376045,-1.692188
 	rot = 0,0.7071068,0,-0.7071068
@@ -2292,10 +2289,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4293964274
-	sym = winglet3_4293964236
-	sym = winglet3_4293964198
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = winglet3_4293866318
+	sym = winglet3_4293866280
+	sym = winglet3_4293866242
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2331,7 +2328,7 @@ PART
 }
 PART
 {
-	part = winglet3_4293964274
+	part = winglet3_4293866318
 	partName = Part
 	pos = -1.692202,5.376045,-3.28546E-06
 	rot = 0,-8.42937E-08,0,-1
@@ -2343,10 +2340,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4293964312
-	sym = winglet3_4293964236
-	sym = winglet3_4293964198
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = winglet3_4293866356
+	sym = winglet3_4293866280
+	sym = winglet3_4293866242
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2382,7 +2379,7 @@ PART
 }
 PART
 {
-	part = winglet3_4293964236
+	part = winglet3_4293866280
 	partName = Part
 	pos = -1.679975E-05,5.376045,1.692181
 	rot = 0,-0.7071069,0,-0.7071067
@@ -2394,10 +2391,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4293964312
-	sym = winglet3_4293964274
-	sym = winglet3_4293964198
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = winglet3_4293866356
+	sym = winglet3_4293866318
+	sym = winglet3_4293866242
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2433,7 +2430,7 @@ PART
 }
 PART
 {
-	part = winglet3_4293964198
+	part = winglet3_4293866242
 	partName = Part
 	pos = 1.692168,5.376045,-3.554732E-06
 	rot = 0,-1,0,8.42937E-08
@@ -2445,10 +2442,10 @@ PART
 	sqor = -1
 	attm = 1
 	modCost = 0
-	sym = winglet3_4293964312
-	sym = winglet3_4293964274
-	sym = winglet3_4293964236
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = winglet3_4293866356
+	sym = winglet3_4293866318
+	sym = winglet3_4293866280
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2484,304 +2481,7 @@ PART
 }
 PART
 {
-	part = sensorThermometer_4293964160
-	partName = Part
-	pos = 0.4440341,24.36804,-3.292767E-06
-	rot = -0.1287089,0.6952942,-0.128709,-0.6952942
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	srfN = srfAttach,mk1pod_4293966076
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnviroSensor
-		isEnabled = True
-		sensorActive = False
-		EVENTS
-		{
-			Toggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle Display
-				guiName = Toggle Display
-				category = Toggle Display
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		EVENTS
-		{
-			DeployExperiment
-			{
-				active = True
-				guiActive = True
-				guiIcon = Deploy
-				guiName = Deploy
-				category = Deploy
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			CollectDataExternalEvent
-			{
-				active = True
-				guiActive = False
-				guiIcon = 
-				guiName = 
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 1.5
-				externalToEVAOnly = True
-			}
-			ReviewDataEvent
-			{
-				active = True
-				guiActive = True
-				guiIcon = Review Data
-				guiName = Review Data
-				category = Review Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperiment
-			{
-				active = True
-				guiActive = True
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ResetExperimentExternal
-			{
-				active = True
-				guiActive = False
-				guiIcon = Reset
-				guiName = Reset
-				category = Reset
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			ResetAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = longAntenna_4293964136
-	partName = Part
-	pos = -0.3323812,24.6588,-3.299424E-06
-	rot = 0.4006364,-0.5826582,0.4006363,0.5826582
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	sym = longAntenna_4293964074
-	srfN = srfAttach,mk1pod_4293966076
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		status = Locked
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		EVENTS
-		{
-			Toggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle
-				guiName = Extend
-				category = Toggle
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		EVENTS
-		{
-			StartTransmission
-			{
-				active = True
-				guiActive = True
-				guiIcon = Transmit Data
-				guiName = Transmit Data
-				category = Transmit Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopTransmission
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop Transmitting
-				guiName = Stop Transmitting
-				category = Stop Transmitting
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = longAntenna_4293964074
-	partName = Part
-	pos = 0.332347,24.6588,-3.368101E-06
-	rot = 0.4006363,0.5826582,-0.4006364,0.5826582
-	attRot = 0,0,0,1
-	mir = 1,1,1
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	attm = 1
-	modCost = 0
-	sym = longAntenna_4293964136
-	srfN = srfAttach,mk1pod_4293966076
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		status = Locked
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		EVENTS
-		{
-			Toggle
-			{
-				active = True
-				guiActive = True
-				guiIcon = Toggle
-				guiName = Extend
-				category = Toggle
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleDataTransmitter
-		isEnabled = True
-		EVENTS
-		{
-			StartTransmission
-			{
-				active = True
-				guiActive = True
-				guiIcon = Transmit Data
-				guiName = Transmit Data
-				category = Transmit Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopTransmission
-			{
-				active = False
-				guiActive = True
-				guiIcon = Stop Transmitting
-				guiName = Stop Transmitting
-				category = Stop Transmitting
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = launchClamp1_4293958832
+	part = launchClamp1_4293866056
 	partName = Part
 	pos = -1.439063,3.643696,-1.439049
 	rot = -8.419014E-07,-0.3826834,4.860711E-07,-0.9238796
@@ -2793,10 +2493,10 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4293958660
-	sym = launchClamp1_4293958548
-	sym = launchClamp1_4293958436
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = launchClamp1_4293865948
+	sym = launchClamp1_4293865840
+	sym = launchClamp1_4293865732
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2807,7 +2507,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.705712
+		scaleFactor = 1.705713
 		height = 4.303848
 		towerRot = 8.419014E-07,0.3826834,-4.860711E-07,-0.9238796
 		EVENTS
@@ -2904,7 +2604,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293958660
+	part = launchClamp1_4293865948
 	partName = Part
 	pos = -1.439063,3.643696,1.439042
 	rot = -2.5161E-07,-0.9238795,9.390183E-07,-0.3826835
@@ -2916,10 +2616,10 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4293958832
-	sym = launchClamp1_4293958548
-	sym = launchClamp1_4293958436
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = launchClamp1_4293866056
+	sym = launchClamp1_4293865840
+	sym = launchClamp1_4293865732
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -2930,7 +2630,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.705712
+		scaleFactor = 1.705713
 		height = 4.303848
 		towerRot = 2.5161E-07,0.9238795,-9.390183E-07,-0.3826835
 		EVENTS
@@ -3027,7 +2727,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293958548
+	part = launchClamp1_4293865840
 	partName = Part
 	pos = 1.439029,3.643696,1.439042
 	rot = 4.860711E-07,-0.9238796,8.419014E-07,0.3826834
@@ -3039,10 +2739,10 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4293958832
-	sym = launchClamp1_4293958660
-	sym = launchClamp1_4293958436
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = launchClamp1_4293866056
+	sym = launchClamp1_4293865948
+	sym = launchClamp1_4293865732
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -3053,7 +2753,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.705712
+		scaleFactor = 1.705713
 		height = 4.303848
 		towerRot = -4.860711E-07,0.9238796,-8.419014E-07,0.3826834
 		EVENTS
@@ -3150,7 +2850,7 @@ PART
 }
 PART
 {
-	part = launchClamp1_4293958436
+	part = launchClamp1_4293865732
 	partName = Part
 	pos = 1.439029,3.643696,-1.439049
 	rot = 9.390183E-07,-0.3826835,2.5161E-07,0.9238795
@@ -3162,10 +2862,10 @@ PART
 	sqor = 6
 	attm = 1
 	modCost = 0
-	sym = launchClamp1_4293958832
-	sym = launchClamp1_4293958660
-	sym = launchClamp1_4293958548
-	srfN = srfAttach,fuelTank1-2_4293964450
+	sym = launchClamp1_4293866056
+	sym = launchClamp1_4293865948
+	sym = launchClamp1_4293865840
+	srfN = srfAttach,fuelTank1-2_4293866494
 	EVENTS
 	{
 	}
@@ -3176,7 +2876,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.705712
+		scaleFactor = 1.705713
 		height = 4.303848
 		towerRot = -9.390183E-07,0.3826835,-2.5161E-07,0.9238795
 		EVENTS
