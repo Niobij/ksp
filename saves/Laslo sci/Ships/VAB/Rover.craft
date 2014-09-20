@@ -1,0 +1,119 @@
+ship = Rover
+version = 0.24.2
+description = 
+type = VAB
+PART
+{
+	part = structuralPanel2_4294437548
+	partName = Part
+	pos = 0.0177582,9.990411,0.004650785
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	link = structuralMiniNode_4294435602
+	link = structuralPanel1_4294429648
+	link = structuralPanel2_4294400180
+	attN = bottom,structuralMiniNode_4294435602
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralMiniNode_4294435602
+	partName = Part
+	pos = 0.0177582,10.14524,0.004650785
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	attN = bottom,structuralPanel2_4294437548
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralPanel1_4294429648
+	partName = Part
+	pos = 1.519074,9.993463,0.004650845
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	link = structuralMiniNode_4294429126
+	srfN = srfAttach,structuralPanel2_4294437548
+	attN = bottom,structuralMiniNode_4294429126
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralMiniNode_4294429126
+	partName = Part
+	pos = 1.519074,10.14829,0.004650845
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 0
+	modCost = 0
+	attN = bottom,structuralPanel1_4294429648
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}
+PART
+{
+	part = structuralPanel2_4294400180
+	partName = Part
+	pos = -1.982462,9.98647,0.004650845
+	rot = 0,1,0,0
+	attRot = 0,0,0,1
+	mir = 1,1,1
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	attm = 1
+	modCost = 0
+	srfN = srfAttach,structuralPanel2_4294437548
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+}

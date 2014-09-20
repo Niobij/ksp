@@ -7,16 +7,16 @@
 public class Main {
 
 	//weight
-	private static final double W_USEFUL			= 0.3 + 4.12;
+	private static final double W_USEFUL			= 6.82;
 
-	private static final double W_S4_TOTAL 			= W_USEFUL + 0.4 + 0.2 + 2 * (0.75 + 0.005 + 0.005 + 0.015 + 0.02 + 0.025) + 3 * 0.005 + 4 * (0.1 + 0.08 + 0.05 + 0.005) + (18) + 2;
-	private static final double W_S4_DRY 			= W_S4_TOTAL - 16;
+	private static final double W_S4_TOTAL 			= W_USEFUL + 0;
+	private static final double W_S4_DRY 			= W_S4_TOTAL - 0;
 
-	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0.4 + 4 * 0.005 + (18) + 3;
-	private static final double W_S3_DRY			= W_S3_TOTAL - 16;
+	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 0;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0.4 + (4.5) + 3 * (36) + (42) + 6;
-	private static final double W_S2_DRY			= W_S2_TOTAL - 4 - 3 * 32 - 32;
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 0;
 
 	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0;
 	private static final double W_S1_DRY			= W_S1_TOTAL - 0;
@@ -40,7 +40,7 @@ public class Main {
 		System.out.format("Znum:\t\t\t%.4f\nRemain fuel:\t%.4f t\n", znum, remainFuel);
 
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
-		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(2000, wTotal, Data.G0_KERBIN));
+		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(80, wTotal, Data.G0_MUN));
 
 //		final double[] thrusts = { 315000, 315000, 2000000 };
 //		final double[] isps = { 240, 240, 320 };
