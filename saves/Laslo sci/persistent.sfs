@@ -9,7 +9,7 @@ GAME
 	Status = 1
 	scene = 5
 	flag = Squad/Flags/hexagon
-	launchID = 73
+	launchID = 76
 	PARAMETERS
 	{
 		FLIGHT
@@ -441,7 +441,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6, 9
-		sci = 285.266
+		sci = 9.334198
 		Tech
 		{
 			id = start
@@ -736,6 +736,18 @@ GAME
 			part = turboFanEngine
 			part = smallHardpoint
 			part = ramAirIntake
+		}
+		Tech
+		{
+			id = advMetalworks
+			state = Available
+			part = trussPiece3x
+			part = dockingPort3
+			part = stackPoint1
+			part = stackQuadCoupler
+			part = stackSeparator
+			part = stackSeparatorBig
+			part = stackSeparatorMini
 		}
 		Science
 		{
@@ -1102,9 +1114,9 @@ GAME
 			id = surfaceSample@KerbinSrfLandedRunway
 			title = Surface Sample from Runway
 			dsc = 1
-			scv = 0.25
+			scv = 0.0625
 			sbv = 0.3
-			sci = 9
+			sci = 11.25
 			cap = 12
 		}
 		Science
@@ -2332,9 +2344,9 @@ GAME
 			id = gravityScan@KerbinSrfLandedRunway
 			title = Gravity Scan from Runway
 			dsc = 3
-			scv = 0.6363636
+			scv = 0.05785126
 			sbv = 0.3
-			sci = 2.4
+			sci = 6.218182
 			cap = 6.6
 		}
 		Science
@@ -2527,6 +2539,36 @@ GAME
 			sci = 10
 			cap = 12
 		}
+		Science
+		{
+			id = seismicScan@KerbinSrfLandedRunway
+			title = Seismic Scan from Runway
+			dsc = 2.5
+			scv = 0.09090908
+			sbv = 0.3
+			sci = 6
+			cap = 6.6
+		}
+		Science
+		{
+			id = gravityScan@KerbinSrfLandedKSC
+			title = Gravity Scan from KSC
+			dsc = 3
+			scv = 0.09090908
+			sbv = 0.3
+			sci = 6
+			cap = 6.6
+		}
+		Science
+		{
+			id = seismicScan@KerbinSrfLandedShores
+			title = Seismic Scan from Kerbin's Shores
+			dsc = 2.5
+			scv = 0.09090908
+			sbv = 0.3
+			sci = 6
+			cap = 6.6
+		}
 	}
 	SCENARIO
 	{
@@ -2536,7 +2578,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 0.24.2
-		UT = 109709093.527549
+		UT = 109711121.179894
 		activeVessel = 0
 		VESSEL
 		{
@@ -2566,13 +2608,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.962004404
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 59.913077925027
-				LAN = 285.029830148332
-				MNA = 0.570796326794897
-				EPH = 109709090.82755
+				LPE = 59.7331249244588
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -2794,10 +2836,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 59.9131084791427
-				LAN = 285.029830148332
+				LPE = 59.7331554809723
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -3016,13 +3058,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.946548935
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 59.913012411447
-				LAN = 285.029830148332
-				MNA = 3.14159265358979
-				EPH = 109709090.82755
+				LPE = 59.7330606924427
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -3244,10 +3286,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 59.9129032187515
-				LAN = 285.029830148332
+				LPE = 59.7329507782223
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -3446,13 +3488,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 59.9131560405485
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 59.7332030599285
+				LAN = 315.913518738644
+				MNA = 0
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -3651,13 +3693,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.980881964
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 59.9129851709912
-				LAN = 285.029830148332
-				MNA = 3.14159265358979
-				EPH = 109709090.82755
+				LPE = 59.7330314357607
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -3856,13 +3898,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 299999.927106801
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 153.837559943557
-				LAN = 285.029830148332
-				MNA = 3.14159265358979
-				EPH = 109709090.82755
+				LPE = 154.017810248528
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -4081,13 +4123,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 299999.946849384
 				ECC = 1
 				INC = NaN
-				LPE = 153.837706702561
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 154.017964981097
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -4306,13 +4348,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 153.837546894248
-				LAN = 285.029830148332
-				MNA = -8.40714670366796
-				EPH = 109709090.82755
+				LPE = 154.017802600007
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -4531,13 +4573,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 153.837439275262
-				LAN = 285.029830148332
+				LPE = 154.017694939295
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -4736,13 +4778,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 153.837583180312
-				LAN = 285.029830148332
+				LPE = 154.017836068249
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -4944,10 +4986,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 153.837465609882
-				LAN = 285.029830148332
+				LPE = 154.017721304923
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -9720,15 +9762,15 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 107774858.544644
+			met = 107781292.979714
 			lct = 1929157.591793
 			root = 0
-			lat = -0.0833061499693755
-			lon = 285.191603454803
-			alt = 65.0752816461027
-			hgt = 0.09716415
-			nrm = 0.07993442,2.592802E-06,-0.9968003
-			rot = -0.07249274,-0.08338241,0.4147088,0.9032214
+			lat = -0.0833055993969431
+			lon = 285.19161412854
+			alt = 64.845787477796
+			hgt = 0.09703425
+			nrm = 0.07995995,-4.771068E-07,-0.9967979
+			rot = -0.07887995,-0.08203246,0.4491164,0.8861958
 			CoM = 0,0,0
 			stg = 0
 			prst = False
@@ -9739,13 +9781,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 34.8079951975595
-				LAN = 285.029830148332
-				MNA = 0
-				EPH = 109709090.82755
+				LPE = 34.6276741873914
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -9765,7 +9807,7 @@ GAME
 				attm = 1
 				srfN = None, -1
 				mass = 0.05
-				temp = 8.474154E-24
+				temp = 1.167625E-28
 				expt = 0.5
 				state = 1
 				connected = False
@@ -9787,7 +9829,7 @@ GAME
 					savedAnimationTime = 1
 					savedAnimationSpeed = 0
 					savedLegState = 3
-					savedLocalPosition = (-0.0001149479, -0.1197417, -0.7218813)
+					savedLocalPosition = (0, 0, 0)
 					suspensionLocked = False
 					StartDeployed_UIFlight
 					{
@@ -9913,7 +9955,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 1
+				mainThrottle = 0
 			}
 		}
 		VESSEL
@@ -11002,13 +11044,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 300126.750799009
 				ECC = 1
 				INC = NaN
-				LPE = 98.9015560483168
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 98.7212507959247
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -11728,13 +11770,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 98.9014835075586
-				LAN = 285.029830148332
+				LPE = 98.7211778932558
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -12211,10 +12253,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 99.0636552263831
-				LAN = 285.029830148332
+				LPE = 99.2067348310909
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -13193,13 +13235,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 110.285803424492
-				LAN = 285.029830148332
+				LPE = 110.112024153798
+				LAN = 315.913518738644
 				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -13398,13 +13440,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 300232.029944676
 				ECC = 1
 				INC = NaN
-				LPE = 110.285380859173
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 110.111607127397
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -14024,13 +14066,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 31366.6110909475
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 82.9372058839641
-				LAN = 285.029830148332
-				MNA = 3.14159265358979
-				EPH = 109709090.82755
+				LPE = 116.880352327413
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 3
 			}
 			PART
@@ -14206,13 +14248,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 300682.048936704
 				ECC = 1
 				INC = NaN
-				LPE = 68.027198355047
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 68.2057620236718
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -14411,13 +14453,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 300683.982358341
 				ECC = 1
 				INC = NaN
-				LPE = 68.0248528155912
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 68.2034146123897
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -14616,13 +14658,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300675.941425146
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 68.0338716561274
-				LAN = 285.029830148332
-				MNA = 3.14159265358979
-				EPH = 109709090.82755
+				LPE = 68.212441384272
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -37837,13 +37879,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 104.034628362974
-				LAN = 285.029830148332
-				MNA = 0
-				EPH = 109709090.82755
+				LPE = 37.8018711129194
+				LAN = 315.913518738644
+				MNA = -8.40714670366795
+				EPH = 109711118.759895
 				REF = 2
 			}
 			PART
@@ -43260,13 +43302,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = 300008.930197661
 				ECC = 1
 				INC = NaN
-				LPE = 53.1184981877169
-				LAN = 285.029830148332
-				MNA = -8.40714670366795
-				EPH = 109709090.82755
+				LPE = 52.9522545163368
+				LAN = 315.913518738644
+				MNA = 3.14159265358979
+				EPH = 109711118.759895
 				REF = 1
 			}
 			PART
@@ -44675,7 +44717,7 @@ GAME
 			badS = True
 			state = Available
 			ToD = 109708034.084579
-			idx = 0
+			idx = -1
 		}
 		KERBAL
 		{

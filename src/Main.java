@@ -6,8 +6,9 @@
  */
 public class Main {
 
+	//rover mass - 6.93 t
 	//weight
-	private static final double W_USEFUL			= 6.82;
+	private static final double W_USEFUL			= 0;
 
 	private static final double W_S4_TOTAL 			= W_USEFUL + 0;
 	private static final double W_S4_DRY 			= W_S4_TOTAL - 0;
@@ -40,6 +41,7 @@ public class Main {
 		System.out.format("Znum:\t\t\t%.4f\nRemain fuel:\t%.4f t\n", znum, remainFuel);
 
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
+//		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(80, wTotal, Data.G0_MUN));
 		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(80, wTotal, Data.G0_MUN));
 
 //		final double[] thrusts = { 315000, 315000, 2000000 };
