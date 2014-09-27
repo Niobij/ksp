@@ -7,29 +7,36 @@
 public class Main {
 
 	//rover mass - 6.93 t
+	//box mass - 27.70 t
+    /*
+        IV - 200
+        III - 2100
+        II - 1300
+        I - 3300
+     */
 	//weight
-	private static final double W_USEFUL			= 0;
+	private static final double W_USEFUL			= 27.70;
 
 	private static final double W_S4_TOTAL 			= W_USEFUL + 0;
 	private static final double W_S4_DRY 			= W_S4_TOTAL - 0;
 
-	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0;
-	private static final double W_S3_DRY			= W_S3_TOTAL - 0;
+	private static final double W_S3_TOTAL			= W_S4_TOTAL + 0.4 + 3 * (0.01 + 0.55) + 4 * 0.05 + 15 * 0.05 + 3 * (4.5) + (18) + 3 * 2;
+	private static final double W_S3_DRY			= W_S3_TOTAL - 3 * 4 - 18;
 
-	private static final double W_S2_TOTAL			= W_S3_TOTAL + 0;
-	private static final double W_S2_DRY			= W_S2_TOTAL - 0;
+	private static final double W_S2_TOTAL			= W_S3_TOTAL + 4 * 0.4 + 27 * 0.05 + 7 * 0.05 + 4 * (2.25 + 9) + 3 * 1.25 + 3;
+	private static final double W_S2_DRY			= W_S2_TOTAL - 4 * (2 + 8);
 
-	private static final double W_S1_TOTAL			= W_S2_TOTAL + 0;
-	private static final double W_S1_DRY			= W_S1_TOTAL - 0;
+	private static final double W_S1_TOTAL			= W_S2_TOTAL + 4 * 0.4 + 3 * 0.4 + 9 * 0.05 + 24 * 0.05 + 9 * 0.08 + 3 * (2.25) + 4 * (4.5 + 9) + 8 * (36) + 4 * 6;
+	private static final double W_S1_DRY			= W_S1_TOTAL - 3 * 2 - 4 * (4 + 8) - 8 * 32;
 
 	public static final void main(final String[] _args) {
-		final double wTotal     = W_S2_TOTAL;
-		final double wDry       = W_S2_DRY;
-		final double tdratio    = W_S2_TOTAL / W_S2_DRY;
+		final double wTotal     = W_S1_TOTAL;
+		final double wDry       = W_S1_DRY;
+		final double tdratio    = W_S1_TOTAL / W_S1_DRY;
 
 		System.out.format("Weigth total:\t%.4f t\nWeight dry:\t\t%.4f t\nT/D ratio:\t\t%.4f\n", wTotal, wDry, tdratio);
 
-		final double isp = 340;
+		final double isp = 350;
         final double deltaV = 3300;
 		final double we = Calculations.calcWe(isp);
 		final double znum = Calculations.calcZnum(deltaV, we);
@@ -42,7 +49,6 @@ public class Main {
 
 //		System.out.println("deltaV = " + Calculations.calcDeltaV(we, 8.71, 3.71));
 //		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(80, wTotal, Data.G0_MUN));
-		System.out.format("TWR:\t\t\t%.4f\n", Calculations.calcTWR(80, wTotal, Data.G0_MUN));
 
 //		final double[] thrusts = { 315000, 315000, 2000000 };
 //		final double[] isps = { 240, 240, 320 };
